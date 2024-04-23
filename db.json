@@ -1,43 +1,45 @@
-[
-  {
-    "id": "ae99a365-32f0-4d4e-a0e4-a6a1d9aaf088",
-    "version": 1,
-    "userId": "401800",
-    "schedulerType": "CLOUD",
-    "active": true,
-    "trigger": {
-      "type": "Time",
-      "properties": [
-        {"property": "time", "value": "0 0 1 ? * SUN,MON *"}
-      ]
-    },
-    "actions": [
-      {
-        "applianceId": "912076003_00:11249222-443E0718DD6B",
-        "type": "Start",
-        "pushNotification": false,
-        "properties": [
-          {"property": "Mode", "value": "SMART"},
-          {"property": "FanSpped", "value": "Mid"  }
-        ]
-      },
-      {
-        "applianceId": "912076003_00:11249222-443E0718DD6B",
-        "type": "Stop",
-        "pushNotification": false,
-        "properties": [
-          {"property": "Power", "value": "OFF"}
-        ]
-      },
-      {
-        "applianceId": "912076003_00:11249222-443E0718DD6B",
-        "type": "Reminder",
-        "pushNotification": true,
-        "properties": [
-          {"property": "Type", "value": "AC3_Reminder"}
-        ]
-      }
-    ],
-    "metadata": {"someMetadata": "test", "name": "routine 1"}
-  }
-]
+{
+    "routines": [
+          {
+            "id": "ae99a365-32f0-4d4e-a0e4-a6a1d9aaf088",
+            "version": 1,
+            "userId": "401800",
+            "schedulerType": "CLOUD",
+            "active": true,
+            "trigger": {
+              "type": "Time",
+              "properties": [
+                {"property": "time", "value": "0 0 1 ? * SUN,MON *"}
+              ]
+            },
+            "actions": [
+              {
+                "applianceId": "912076003_00:11249222-443E0718DD6B",
+                "type": "Start",
+                "pushNotification": false,
+                "properties": [
+                  {"property": "Mode", "value": "SMART"},
+                  {"property": "FanSpped", "value": "Mid"  }
+                ]
+              },
+              {
+                "applianceId": "912076003_00:11249222-443E0718DD6B",
+                "type": "Stop",
+                "pushNotification": false,
+                "properties": [
+                  {"property": "Power", "value": "OFF"}
+                ]
+              },
+              {
+                "applianceId": "912076003_00:11249222-443E0718DD6B",
+                "type": "Reminder",
+                "pushNotification": true,
+                "properties": [
+                  {"property": "Type", "value": "AC3_Reminder"}
+                ]
+              }
+            ],
+            "metadata": {"someMetadata": "test", "name": "routine 1"}
+          }
+    ]
+}
